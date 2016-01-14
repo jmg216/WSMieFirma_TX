@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>WSMieFirma_TX</display-name>
+  
+  <servlet>
+  
+    <servlet-name>rest-ws</servlet-name>
+    <servlet-class>
+            com.sun.jersey.spi.container.servlet.ServletContainer
+        </servlet-class>
+        
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>com.isa.ws.services</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
+        <param-value>com.isa.ws.filter.CORSFilter</param-value>
+    </init-param>    
+    
+    <load-on-startup>1</load-on-startup>
+    
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>rest-ws</servlet-name>
+    <url-pattern>/validar/*</url-pattern>
+  </servlet-mapping>  
+  
+  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>com.isa.ws.filter.RestAuthenticationFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/validar/*</url-pattern>
+  </filter-mapping>  
+  
+</web-app>
