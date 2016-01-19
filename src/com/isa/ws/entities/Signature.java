@@ -6,15 +6,14 @@ public class Signature {
 
 	private String cn;
 	private Date fecha;
-	private String rol;
 	private String motivo;
 	private String ubicacion;
+	private Certificate certificado;
 	private boolean verify;
 	
 	public Signature() {
 		super();
 		this.cn = "";
-		this.rol = "";
 		this.motivo = "";
 		this.ubicacion = "";
 		this.verify = false;
@@ -38,12 +37,6 @@ public class Signature {
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
-	public String getRol() {
-		return rol;
-	}
-	public void setRol(String rol) {
-		this.rol = rol;
-	}
 	public String getMotivo() {
 		return motivo;
 	}
@@ -56,6 +49,13 @@ public class Signature {
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
+	public Certificate getCertificado() {
+		return certificado;
+	}
+	public void setCertificado(Certificate certificado) {
+		this.certificado = certificado;
+	}
+
 	
 	
 	

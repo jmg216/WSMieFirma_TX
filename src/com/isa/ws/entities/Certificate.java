@@ -11,6 +11,19 @@ public class Certificate {
     private String oEmisor;
     private String oUEmisor;
     private String nroSerie;
+    
+    public Certificate(){
+        this.nombre = "";
+        this.emisor = "";
+        this.fechaDesde = "";
+        this.fechaHasta = "";
+        this.oSubject = "";
+        this.oUSubject = "";
+        this.oEmisor = "";
+        this.oUEmisor = "";
+        this.nroSerie = "";    	
+    }
+    
 	public String getNombre() {
 		return nombre;
 	}

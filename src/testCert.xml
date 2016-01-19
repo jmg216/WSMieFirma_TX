@@ -1,0 +1,26 @@
+<css:certificate xmlns:css="http://www.safelayer.com/TWS"
+	ThumbId="l+4XO9eFZsWEKHRbJZ4RYG1Ow/s=">
+	<css:tbsCertificate>
+		<css:subject>CN=IGDOC</css:subject>
+		<css:issuer>CN=Safelayer - Class 1 Root CA Demo, O=Safelayer Secure
+			Communications\, S.A. [C.I.F. A61930046]</css:issuer>
+		<css:serialNumber>XZ6QVkxDdYFVFULCD/24Fg==</css:serialNumber>
+		<css:validity>
+			<css:notBefore>2015-03-27T11:45:06Z</css:notBefore>
+			<css:notAfter>2016-03-27T10:45:06Z</css:notAfter>
+		</css:validity>
+		<css:extensions>
+			<css:extension>
+				<css:keyUsage>digitalSignature nonRepudiation keyEncipherment
+				</css:keyUsage>
+			</css:extension>
+			<css:extension>
+				<css:extKeyUsage>id-kp-clientAuth id-kp-emailProtection
+				</css:extKeyUsage>
+			</css:extension>
+		</css:extensions>
+		<css:subjectPublicKeyInfo type="RSA 2048" />
+		<css:signatureAlgorithm>pkcs1-sha1WithRsaSignature
+		</css:signatureAlgorithm>
+	</css:tbsCertificate>
+</css:certificate>

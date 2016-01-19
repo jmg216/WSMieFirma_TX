@@ -28,14 +28,14 @@
     <url-pattern>/validar/*</url-pattern>
   </servlet-mapping>  
   
-  <filter>
-    <filter-name>AuthenticationFilter</filter-name>
-    <filter-class>com.isa.ws.filter.RestAuthenticationFilter</filter-class>
-  </filter>
+<!--   <filter> -->
+<!--     <filter-name>AuthenticationFilter</filter-name> -->
+<!--     <filter-class>com.isa.ws.filter.RestAuthenticationFilter</filter-class> -->
+<!--   </filter> -->
   
-  <filter-mapping>
-    <filter-name>AuthenticationFilter</filter-name>
-    <url-pattern>/validar/*</url-pattern>
-  </filter-mapping>  
+<!--   <filter-mapping> -->
+<!--     <filter-name>AuthenticationFilter</filter-name> -->
+<!--     <url-pattern>/validar/*</url-pattern> -->
+<!--   </filter-mapping>   -->
   
 </web-app>
